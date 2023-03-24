@@ -4,16 +4,23 @@ import Themetoggle from './Themetoggle.astro'
 ---
 
 <header>
-<div class="fb">
-  <a href="https://blog.datalab.icu" class="gpt-subtitle">My Blog</a>
+<div class="fb" style="text-decoration: underline;">
+  <button class="gpt-subtitle text-(2xl transparent) font-extrabold bg-(clip-text gradient-to-r) from-sky-400 to-emerald-600">
+  <a href="https://blog.datalab.icu" target="_blank">My Blog</a>
+  </button>
 </div>
   <div class="fb">
     <Logo />
+        <span class="gpt-title">ChatGPT</span>
+    <span class="gpt-subtitle">Dana Wang</span>
     <Themetoggle />
   </div>
   <div class="fi mt-2">
-    <span class="gpt-title">ChatGPT</span>
-    <span class="gpt-subtitle">Dana Wang</span>
+
   </div>
-  <p mt-1 op-60>Based on OpenAI API (gpt-3.5-turbo).</p>
+  <p mt-1 op-60>Based on OpenAI API (gpt-3.5-turbo).Only for test.Do not use for illegal purposes</p>
 </header>
+
+.fb button a {
+text-decoration: underline;
+}
